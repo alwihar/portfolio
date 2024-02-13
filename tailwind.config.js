@@ -5,14 +5,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#00040f",
-        secondary: "#00f6ff",
-        dimWhite: "rgba(255, 255, 255, 0.7)",
-        dimBlue: "rgba(9, 151, 124, 0.1)",
+        primary: "#09090A",
+        secondary: "#FB2558",
+        main: "#F4F4F5"
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        sans: ['Open Sans', 'sans-serif'],
+        denver: ['Denver Serial Black', 'sans-serif']
       },
+      fontSize: {
+        'custom-title-big': '140px',
+        'custom-title-mid': '90px',
+        'custom-title': '35px',
+        'custom-title-small': '25px',
+        'custom-body-big': '22px',
+        'custom-body': '16px',
+        'custom-body-small': '12px'
+      }
     },
     screens: {
       xs: "480px",
@@ -23,6 +32,6 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [],
+  plugins: []
 }
 
