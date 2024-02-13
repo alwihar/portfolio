@@ -8,6 +8,10 @@ import Tech from './Tech'
 import About from './About'
 import Feedback from './Feedback'
 import Projects from './Projects'
+import Art from './Art'
+import SpotlightText from './SpotlightText'
+import ScrollNav from './ScrollNav'
+import Divider from './Divider'
 
 export {
   Home,
@@ -19,5 +23,9 @@ export {
   Tech,
   About,
   Feedback,
-  Projects
+  Projects,
+  Art,
+  SpotlightText,
+  ScrollNav,
+  Divider
 }
