@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+
 import { navLinks } from '../constants'
 
-const Nav = () => {
+const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => {
+      setIsScrolled(window.scrollY > 200)
+    }
+    window.addEventListener("scroll", onScroll)
+
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
+
   return (
-    <nav className='flex items-center py-6 justify-between'>
+    <nav className={`${isScrolled ? 'scrolled' : ''} header fixed z-20 w-full flex items-center py-10 px-32 justify-between`}>
       <div className="flex ss:gap-40 gap-4 items-center">
         <Link to='' className="flex flex-col leading-5">
           <span className="font-denver text-secondary text-[32px]">alwi.</span>
@@ -20,12 +32,12 @@ const Nav = () => {
           ))}
         </ul>
       </div>
-      <div className="nav_say-hello-container text-main">
-        <div className="nav_say-hello-circle"/>
-        <span className="nav_say-hello-text bg-primary">say hello</span>
+      <div className="header_say-hello-container text-main">
+        <div className="header_say-hello-circle"/>
+        <span className="header_say-hello-text bg-primary">say hello</span>
       </div>
     </nav>
   )
 }
 
-export default Nav
+export default Header

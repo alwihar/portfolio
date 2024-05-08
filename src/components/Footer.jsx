@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SocialMedia from './shared/SocialMedia'
+import { SocialMedia } from './shared'
 
 const Footer = () => {
   return (

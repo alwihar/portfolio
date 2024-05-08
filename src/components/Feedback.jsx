@@ -2,10 +2,7 @@ import React from 'react'
 
 import { feedback } from '../assets/index'
 
-import MainWrapper from './shared/MainWrapper'
-import MainTitle from './shared/MainTitle'
-import MainText from './shared/MainText'
-import TextBox from './shared/TextBox'
+import { MainWrapper, MainTitle, MainText, TextBox } from './shared'
 import { recommendations } from '../constants'
 
 const Feedback = () => {

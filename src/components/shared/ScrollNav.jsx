@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link, animateScroll as scroll, scrollSpy, Events } from 'react-scroll'
-import { scrollNavLinks } from '../constants'
+import { Link, scrollSpy, Events } from 'react-scroll'
 
-const ScrollNav = () => {
+const ScrollNav = ({scrollNavLinks}) => {
   React.useEffect(() => {
     Events.scrollEvent.register('begin')
     Events.scrollEvent.register('end')
@@ -15,7 +14,7 @@ const ScrollNav = () => {
   }, [])
 
   return (
-    <nav className='fixed left-0 top-1/3 h-screen'>
+    <nav className='fixed left-0 top-1/3 h-screen z-10'>
       <ul className="list-none flex flex-col items-start gap-4 text-main">
         {scrollNavLinks.map((nav) => (
           <li key={nav.id} className="scrollNav_nav-item">

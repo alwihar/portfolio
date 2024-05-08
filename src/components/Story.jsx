@@ -2,9 +2,7 @@ import React from 'react'
 
 import styles from '../style'
 import { alwi } from '../assets/index'
-import MainWrapper from './shared/MainWrapper'
-import MainTitle from './shared/MainTitle'
-import MainText from './shared/MainText'
+import { MainWrapper, MainTitle, MainText } from './shared'
 
 const Story = () => {
   return (

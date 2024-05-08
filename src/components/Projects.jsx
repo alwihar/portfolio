@@ -1,11 +1,12 @@
-import React from 'react';
+import React from 'react'
+
+import { MainWrapper } from './shared'
 
 const Projects = () => {
   return (
-    <div>
+      <MainWrapper id='tech'>
+      </MainWrapper>
+  )
+}
 
-    </div>
-  );
-};
-
-export default Projects;
+export default Projects

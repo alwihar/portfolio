@@ -726,19 +726,19 @@ video {
   font-family: "Denver Serial Black", sans-serif;
 }
 
-.nav_say-hello-container {
+.header_say-hello-container {
   position: relative;
   display: inline-block;
   padding: 10px;
   cursor: pointer;
 }
 
-.nav_say-hello-text {
+.header_say-hello-text {
   position: relative;
   z-index: 10;
 }
 
-.nav_say-hello-circle {
+.header_say-hello-circle {
   content: '';
   position: absolute;
   top: 50%;

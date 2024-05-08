@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
 
-import styles from '../style'
 import { contact } from '../assets/index'
-import MainWrapper from './shared/MainWrapper'
-import MainTitle from './shared/MainTitle'
-import MainText from './shared/MainText'
+import { MainWrapper, MainTitle, MainText, Button } from './shared'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -76,12 +73,8 @@ const Contact = () => {
         {errors.email && <p className="text-red-500 text-xs italic">{errors.email}</p>}
         {errors.message && <p className="text-red-500 text-xs italic">{errors.message}</p>}
         <div className="w-full flex justify-end">
-          <button type="reset" className="contact_clear-button bg-transparent text-main">
-            clear
-          </button>
-          <button type="submit" className="contact_submit-button bg-secondary text-main">
-            send
-          </button>
+          <Button type="reset" title='clear' style='contact_clear-button bg-transparent'/>
+          <Button type="submit" title='send' style='contact_submit-button'/>
         </div>
       </div>
     </MainWrapper>
