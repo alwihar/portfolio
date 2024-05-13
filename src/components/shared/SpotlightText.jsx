@@ -5,8 +5,8 @@ const SpotlightText = ({text}) => {
 
   const handleMouseMove = (e) => {
     setMaskPosition({
-      x: e.clientX - window.innerWidth / 2 - 50,
-      y: e.clientY - window.innerHeight / 2 + 150
+      x: e.clientX - window.innerWidth / 2,
+      y: e.clientY - window.innerHeight / 2
     })
     // fix this for every size of the screen
   }

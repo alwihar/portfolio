@@ -47,7 +47,9 @@ html, body {
     }
 
     .spotlightText_spotlight-div {
+        position: relative;
         background: #09090A;
+        padding: 100px;
 
         .spotlightText_spotlight-text {
             color: #F4F4F5;
@@ -58,9 +60,9 @@ html, body {
             .spotlightText_spotlight {
                 position: absolute;
                 top: 0;
-                left: 100px;
+                left: 0;
                 right: 0;
-                bottom: 300px;
+                bottom: 0;
                 pointer-events: none;
                 background: radial-gradient(circle, transparent 5%, #09090A 22%);
                 background-position: -50px -50px;
