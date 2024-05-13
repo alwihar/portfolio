@@ -6,7 +6,7 @@ const ProjectCard = ({ project, index }) => {
   const isReversed = index % 2 !== 0
 
   return (
-    <div className={`${isReversed ? 'flex-row-reverse' : ''} flex justify-between my-8 w-full gap-10 flex-col lg:flex-row`}>
+    <div className={`${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} flex justify-between my-8 w-full gap-10 flex-col`}>
       <div className={`${isReversed ? 'items-end' : ''} flex flex-col`}>
         <SecondTitle title={project.name} customCss='text-secondary font-denver font-bold'/>
         <p className={`${isReversed ? 'text-end' : ''} text-main`}>{project.description}</p>
