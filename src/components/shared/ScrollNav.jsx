@@ -14,7 +14,7 @@ const ScrollNav = ({scrollNavLinks}) => {
   }, [])
 
   return (
-    <nav className='fixed left-0 top-1/3 h-screen z-10'>
+    <nav className='hidden sm:block fixed left-0 top-1/3 h-screen z-10'>
       <ul className="list-none flex flex-col items-start gap-4 text-main">
         {scrollNavLinks.map((nav) => (
           <li key={nav.id} className="scrollNav_nav-item">

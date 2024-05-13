@@ -6,9 +6,8 @@ import Tech from './Tech'
 import About from './About'
 import Feedback from './Feedback'
 import Projects from './Projects'
-import SpotlightText from './SpotlightText'
-import Divider from './Divider'
 import Circles from './Circles'
+import ProjectCard from './ProjectCard'
 
 export {
   Contact,
@@ -19,7 +18,6 @@ export {
   About,
   Feedback,
   Projects,
-  SpotlightText,
-  Divider,
-  Circles
+  Circles,
+  ProjectCard
 }

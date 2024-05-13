@@ -9,11 +9,14 @@
     src: url('/fonts/denver-serial-black-regular.ttf');
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 .app {
     .header {
         .header_say-hello-container {
             position: relative;
-            display: inline-block;
             padding: 10px;
             cursor: pointer;
 
@@ -55,7 +58,7 @@
             .spotlightText_spotlight {
                 position: absolute;
                 top: 0;
-                left: 0;
+                left: 100px;
                 right: 0;
                 bottom: 300px;
                 pointer-events: none;
@@ -153,9 +156,6 @@
         border: 1px solid #505050;
         background-color: #09090A;
         position: relative;
-        width: 50%;
-        max-width: 450px;
-        min-height: 400px;
         border-radius: 25px;
         padding: 15px;
 
@@ -172,23 +172,76 @@
             right: 0;
         }
     }
-}
 
-.slick-slider {
-    display: flex;
-    align-items: center;
-
-    .slick-track {
+    .slick-slider {
         display: flex;
         align-items: center;
-        min-height: 200px;
 
-        .slick-center i {
-            font-size: 150px !important; /* Larger size for the center item */
-            color: #FB2558 !important; /* Highlighted color for the center item */
-            transition: all 0.3s ease;
+        .slick-track {
+            display: flex;
+            align-items: center;
+            min-height: 200px;
+
+            .slick-center i {
+                font-size: 150px !important;
+                color: #FB2558 !important;
+                transition: all 0.3s ease;
+            }
         }
     }
+
+    /* Base styles for each card */
+    .card {
+        background-size: cover;
+        background-position: center;
+        border-radius: 12px;
+        display: block;
+        backface-visibility: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+        transition: transform 0.5s ease;
+
+    }
+
+    .style-card-1 { --translate-x: 9rem; transform: translateX(var(--translate-x)) translateY(1rem); }
+    .style-card-2 { --translate-x: 6rem; transform: translateX(var(--translate-x)); }
+    .style-card-3 { --translate-x: 3rem; transform: translateX(var(--translate-x)) translateY(1rem); }
+    .style-card-4 { --translate-x: 0rem; transform: translateX(var(--translate-x)); }
+
+    .card:hover {
+        transform: translateX(var(--translate-x)) scale(1.4);
+        z-index: 40 !important;
+    }
+
+    @keyframes float {
+        0%   {transform: translateX(0) translateY(0);}
+        25%  {transform: translateX(100px) translateY(100px);}
+        50%  {transform: translateX(-100px) translateY(50px);}
+        100% {transform: translateX(0) translateY(0);}
+    }
+
+    @keyframes floatReverse {
+        0%   {transform: translateX(0) translateY(0);}
+        25%  {transform: translateX(-100px) translateY(100px);}
+        50%  {transform: translateX(100px) translateY(-50px);}
+        100% {transform: translateX(0) translateY(0);}
+    }
+
+    .circle {
+        animation-duration: 20s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    .animate-float {
+        animation-name: float;
+    }
+
+    .animate-floatReverse {
+        animation-name: floatReverse;
+    }
 }
+
+
+
 
 

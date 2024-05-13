@@ -6,7 +6,7 @@ import ExternalLink from './ExternalLink'
 
 const TextBox = ({ text, author, image, position, link }) => {
   return (
-    <div className="textBox flex flex-col justify-between">
+    <div className="textBox flex flex-col justify-between sm:w-[50%] sm:max-w-[450px] sm:min-h-[400px]">
       <p className={`text-main text-custom-body-small ${styles.paragraph}`}>{text}</p>
       <div className="flex pt-[15px] items-center">
         <img src={image} alt="author-image" className="textBox_image"/>

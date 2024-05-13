@@ -5,8 +5,8 @@ const SpotlightText = ({text}) => {
 
   const handleMouseMove = (e) => {
     setMaskPosition({
-      x: e.clientX - window.innerWidth / 2,
-      y: e.clientY - window.innerHeight / 2
+      x: e.clientX - window.innerWidth / 2 - 50,
+      y: e.clientY - window.innerHeight / 2 + 150
     })
     // fix this for every size of the screen
   }
@@ -19,7 +19,7 @@ const SpotlightText = ({text}) => {
     <div
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="bg-black flex justify-center items-center z-0 spotlightText_spotlight-div"
+      className="bg-black xl:flex hidden justify-center items-center z-0 spotlightText_spotlight-div"
     >
       <h2 className="spotlightText_spotlight-text font-denver">
         {text}

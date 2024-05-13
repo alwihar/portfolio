@@ -1,15 +1,14 @@
 import React from 'react'
 
-import { SpotlightText } from '../components'
-import { CompWrapper } from '../components/shared'
+import { CompWrapper, MainWrapper, SpotlightText } from '../components/shared'
 
 const Art = () => {
   return (
     <CompWrapper>
       <SpotlightText text='art'/>
-      <div className='min-h-[50vh] text-secondary'>
-        coming soon...
-      </div>
+      <MainWrapper id='art' children={
+        <div className='text-secondary'>coming soon...</div>
+      } customCss='flex justify-center text-center lg:min-h-0 min-h-[70vh]'/>
     </CompWrapper>
   )
 }

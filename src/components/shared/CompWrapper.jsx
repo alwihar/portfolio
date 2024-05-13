@@ -4,7 +4,7 @@ import styles from '../../style'
 
 const CompWrapper = ({ children }) => {
   return (
-    <div className="flex flex-col items-center px-[200px] mt-[120px]">
+    <div className="flex flex-col items-center px-[60px] sm:px-[200px] mt-[120px]">
       {children}
     </div>
   )

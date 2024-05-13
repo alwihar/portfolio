@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Slider from 'react-slick'
 
 import { techIconsSettings } from '../../constants'
-import { MainText, MainTitle } from './index'
+import { MainTitle, SecondTitle } from './index'
 
 const Carousel = ({ items }) => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -14,7 +14,7 @@ const Carousel = ({ items }) => {
     nextArrow: <techIconsSettings.nextArrow direction="right" />,
   }
   return (
-    <div className="max-w-[850px] mx-auto m-10">
+    <div className="max-w-[90vw] sm:max-w-[600px] md:max-w-[750px] lg:max-w-[850px]">
       <Slider {...settings}>
         {items.map((item, index) => (
           <div key={index} className="carousel-slide text-center">
@@ -24,7 +24,7 @@ const Carousel = ({ items }) => {
       </Slider>
       <div className="text-center mt-4">
         <MainTitle title={items[currentSlide]?.name} customCss='text-secondary'/>
-        <MainText text={items[currentSlide]?.text || 'No description available'}/>
+        <p className='text-main'>{items[currentSlide]?.text || 'No description available'}</p>
       </div>
     </div>
   )

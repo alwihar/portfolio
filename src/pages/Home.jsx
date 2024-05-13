@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { About, Story, Contact, Feedback, SpotlightText, Divider, Circles } from '../components'
+import { About, Story, Contact, Feedback, Circles } from '../components'
 import { homeLinks } from '../constants'
-import { CompWrapper, ScrollNav } from '../components/shared'
+import { CompWrapper, ScrollNav, SpotlightText, Divider } from '../components/shared'
 
 const Home = () => {
   return (

@@ -8,7 +8,8 @@ module.exports = {
         primary: "#09090A",
         secondary: "#FB2558",
         main: "#F4F4F5",
-        accent: '#e0b6b4'
+        danger: '#DD1A49',
+        success: '#2EB086'
       },
       fontFamily: {
         sans: ['Open Sans', 'sans-serif'],
@@ -30,7 +31,8 @@ module.exports = {
       sm: "768px",
       md: "1060px",
       lg: "1200px",
-      xl: "1700px",
+      xl: "1400px",
+      xxl: "1700px",
     },
   },
   plugins: []

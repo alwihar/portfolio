@@ -8,6 +8,9 @@ import MainWrapper from './MainWrapper'
 import ScrollNav from './ScrollNav'
 import SocialMedia from './SocialMedia'
 import TextBox from './TextBox'
+import Divider from './Divider'
+import SpotlightText from './SpotlightText'
+import SecondTitle from './SecondTitle'
 
 export {
   Button,
@@ -19,5 +22,8 @@ export {
   MainWrapper,
   ScrollNav,
   SocialMedia,
-  TextBox
+  TextBox,
+  Divider,
+  SpotlightText,
+  SecondTitle
 }

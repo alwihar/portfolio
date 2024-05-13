@@ -7,9 +7,9 @@ import { MainWrapper, MainTitle, MainText } from './shared'
 const Story = () => {
   return (
     <MainWrapper id="story">
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col lg:flex-row justify-between items-center">
         <div className="story_img">
-          <img src={alwi} alt="profile-photo" className="max-w-[700px] mr-[-100px] ml-[-170px]"/>
+          <img src={alwi} alt="profile-photo" className="max-w-[500px] sm:max-w-[700px] mr-[-100px] ml-[-170px]"/>
           <div className="story_img-shadow"/>
         </div>
         <div className={`flex-1 ${styles.flexStart} flex-col max-w-[550px]`}>

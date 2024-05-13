@@ -1,4 +1,19 @@
-import { aaron, claudio, x, fb, insta, linkedin, github } from '../assets/index'
+import {
+  aaron,
+  claudio,
+  x,
+  fb,
+  insta,
+  linkedin,
+  github,
+  dashboard1,
+  dashboard2,
+  dashboard3,
+  dashboard4,
+  lwa1, lwa2, lwa3, lwa4,
+  job1, job2, job3,
+  portfolio1, portfolio2, portfolio3, portfolio4
+} from '../assets/index'
 import Arrow from '../components/shared/Arrow'
 
 export const navLinks = [
@@ -104,6 +119,32 @@ export const techIconsSettings = {
   centerPadding: '0',
   prevArrow: Arrow,
   nextArrow: Arrow,
+  responsive: [
+    {
+      breakpoint: 640, // 'sm' breakpoint for mobile
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false, // Optional, adjust based on your needs
+      }
+    },
+    {
+      breakpoint: 1024, // 'md' breakpoint for tablet
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true, // Keep consistent with the original settings
+      }
+    },
+    {
+      breakpoint: 1400, // Settings for desktops and larger devices
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        centerMode: true,
+      }
+    }
+  ]
 }
 
 export const techIconsItems = [
@@ -123,7 +164,7 @@ export const techIconsItems = [
   { class: 'devicon-github-original', name: 'GitHub', text: 'A platform for hosting, managing, and collaborating on Git repositories' },
   { class: 'devicon-postman-plain', name: 'Postman', text: 'A collaborative platform for API development and testing' },
   { class: 'devicon-mongodb-plain', name: 'MongoDB', text: 'A NoSQL database system for modern, scalable applications' },
-  { class: 'devicon-mysql-plain', name: 'MySQL', text: 'An open-source relational database management system' },
+  // { class: 'devicon-mysql-plain', name: 'MySQL', text: 'An open-source relational database management system' },
   { class: 'devicon-threejs-original', name: 'Three.js', text: 'A JavaScript library for creating 3D graphics in the browser' },
   { class: 'devicon-figma-plain', name: 'Figma', text: 'A cloud-based design tool for UI/UX design collaboration' },
   { class: 'devicon-materialui-plain', name: 'Material-UI', text: 'A React component library implementing Material Design principles' },
@@ -135,5 +176,32 @@ export const techIconsItems = [
   { class: 'devicon-solidity-plain', name: 'Solidity', text: 'A high-level programming language for developing Ethereum smart contracts' },
   { class: 'devicon-npm-original-wordmark', name: 'npm', text: 'A package manager for JavaScript, managing packages and dependencies' },
   { class: 'devicon-less-plain-wordmark', name: 'Less', text: 'A backwards-compatible CSS preprocessor with more features' },
-  { class: 'devicon-storybook-plain', name: 'Storybook', text: 'An open-source tool for building UI components in isolation' }
+  // { class: 'devicon-storybook-plain', name: 'Storybook', text: 'An open-source tool for building UI components in isolation' }
+]
+
+export const projects = [
+  {
+    name: 'Loyalty Admin Dashboard',
+    description: 'Worked on a comprehensive B2B dashboard that enables users to monitor their analytics, connect with brands for exchanges, and seamlessly create NFTs and rewards, streamlining business operations and engagement in one intuitive platform.',
+    link: 'https://dashboard.qiibee.com/',
+    images: [dashboard4, dashboard3, dashboard2, dashboard1]
+  },
+  {
+    name: 'Loyalty Whitelabel App',
+    description: 'Worked on a B2C mobile web app that empowers users to trade their loyalty points, earn rewards, and purchase NFTs, enhancing the user experience through seamless transactions and exclusive opportunities.',
+    link: 'https://rewards.qiibee.com/',
+    images: [lwa1, lwa2, lwa3, lwa4]
+  },
+  {
+    name: '3D Portfolio',
+    description: 'Built a dynamic 3D portfolio with Three.js, React, and Tailwind CSS, featuring interactive 3D models and a responsive design to showcase my front-end development skills and project highlights.',
+    link: 'https://github.com/alwihar/3DPortfolio',
+    images: [portfolio1, portfolio4, portfolio3, portfolio2]
+  },
+  {
+    name: 'Job Search App',
+    description: 'Developed a mobile application that showcases popular and nearby job listings, allowing users to quickly discover opportunities that match their interests.',
+    link: 'https://github.com/alwihar/JobSearch',
+    images: [job1, job2, job3]
+  }
 ]

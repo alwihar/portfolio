@@ -14,7 +14,7 @@ const Feedback = () => {
         </div>
         <MainTitle title="what people I've worked with have to say" customCss="text-main max-w-[450px] text-center mt-5"/>
         <MainText text="I'm proud of the work I do, but don't just take my word for it. here's what people I've worked with have to say" customCss="max-w-[550px] text-center"/>
-        <div className="w-full flex justify-between pt-[70px] gap-[20px]">
+        <div className="w-full flex flex-col sm:flex-row justify-between pt-[70px] gap-[20px]">
           {recommendations.map(({ id, ...restProps }) => (
             <TextBox key={id} {...restProps}/>
           ))}
