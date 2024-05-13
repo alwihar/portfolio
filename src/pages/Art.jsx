@@ -8,7 +8,7 @@ const Art = () => {
       <SpotlightText text='art'/>
       <MainWrapper id='art' children={
         <div className='text-secondary'>coming soon...</div>
-      } customCss='flex justify-center text-center lg:min-h-0 min-h-[70vh]'/>
+      } customCss='flex justify-center text-center min-h-[70vh]'/>
     </CompWrapper>
   )
 }
