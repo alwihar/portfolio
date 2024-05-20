@@ -15,11 +15,27 @@ This portfolio is designed to be a living showcase, highlighting the breadth of 
 - **Recommendations**: Testimonials from colleagues and clients, reflecting my professional collaborations and impact.
 - **Contact**: A section dedicated to facilitating communication, inviting opportunities for networking, collaborations, and commissions.
 
-### Tech Stack:
+## Tech Stack:
 
-- **Frontend**: Developed with React.js for a dynamic and responsive user interface.
-- **Styling**: Tailored with Tailwind CSS for a modern, utility-first design.
-// add more
+### Frontend
+- **React.js**: Used for building a dynamic and responsive user interface.
+- **React Router**: Manages navigation within the application.
+
+### Styling
+- **Tailwind CSS**: Utilized for a modern, utility-first approach to CSS.
+
+### Animation
+- **Framer Motion**: Employed to enhance the user interface with smooth animations.
+
+### Build Tools
+- **Vite**: A modern build tool that significantly improves the development experience with fast HMR and optimized build times.
+
+### Hosting
+- **Vercel**: For deploying and hosting the portfolio, ensuring optimal performance.
+
+### Version Control
+- **Git**: For source code management.
+- **GitHub**: Hosts the code repository and leverages GitHub Pages and Actions for CI/CD.
 
 ### How to Use:
 
@@ -27,7 +43,7 @@ To clone and run this application, you'll need Git and Node.js (which comes with
 
 ```bash
 # Clone this repository
-$ git clone [URL to your repository]
+$ git clone [URL to the repository]
 
 # Go into the repository
 $ cd [repository name]
