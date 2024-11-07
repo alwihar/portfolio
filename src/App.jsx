@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import { Header, Footer } from './components'
-import { Home, Portfolio, Art } from './pages'
+import { Home, Portfolio, Art, PaintingDetail } from './pages'
 
 const App = () => {
 
@@ -15,6 +15,7 @@ const App = () => {
           <Route path='/' element={<Home/>}/>
           <Route exact path='/portfolio' element={<Portfolio/>}/>
           <Route exact path='/art' element={<Art/>}/>
+          <Route path="/art/:slug" element={<PaintingDetail/>} />
         </Routes>
 
         <Footer/>

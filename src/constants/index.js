@@ -12,7 +12,8 @@ import {
   dashboard4,
   lwa1, lwa2, lwa3, lwa4,
   job1, job2, job3,
-  portfolio1, portfolio2, portfolio3, portfolio4
+  portfolio1, portfolio2, portfolio3, portfolio4,
+  aqua, black, red, purple, siren, enigma, overwhelmed, stuck, heads, white, yellow
 } from '../assets/index'
 import Arrow from '../components/shared/Arrow'
 
@@ -125,7 +126,7 @@ export const techIconsSettings = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: false, // Optional, adjust based on your needs
+        centerMode: false,
       }
     },
     {
@@ -133,7 +134,7 @@ export const techIconsSettings = {
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
-        centerMode: true, // Keep consistent with the original settings
+        centerMode: true,
       }
     },
     {
@@ -168,7 +169,6 @@ export const techIconsItems = [
   { class: 'devicon-threejs-original', name: 'Three.js', text: 'A JavaScript library for creating 3D graphics in the browser' },
   { class: 'devicon-figma-plain', name: 'Figma', text: 'A cloud-based design tool for UI/UX design collaboration' },
   { class: 'devicon-materialui-plain', name: 'Material-UI', text: 'A React component library implementing Material Design principles' },
-  { class: 'devicon-canva-original', name: 'Canva', text: 'An online graphic design tool for creating visual content' },
   { class: 'devicon-jira-plain', name: 'Jira', text: 'A project management tool for agile teams, tracking issues and tasks' },
   { class: 'devicon-jetbrains-plain', name: 'JetBrains', text: 'An integrated development environment (IDE) software vendor' },
   { class: 'devicon-json-plain', name: 'JSON', text: 'JavaScript Object Notation, a lightweight data interchange format' },
@@ -205,3 +205,84 @@ export const projects = [
     images: [job1, job2, job3]
   }
 ]
+
+export const paintingsData = [
+  {
+    id: 1,
+    name: 'Aqua Empress',
+    imageSrc: aqua,
+    altText: 'Aqua Empress',
+    nftLink: '',
+  },
+  {
+    id: 2,
+    name: 'Black Magic',
+    imageSrc: black,
+    altText: 'Black Magic',
+    nftLink: 'https://foundation.app/mint/eth/0x217f9D15f24624BCdB00a657f9F79D1de729D802/3',
+  },
+  {
+    id: 3,
+    name: 'Enigma of the Sun',
+    imageSrc: enigma,
+    altText: 'Enigma of the Sun',
+    nftLink: '',
+  },
+  {
+    id: 4,
+    name: 'overwhelmed with emotions',
+    imageSrc: overwhelmed,
+    altText: 'overwhelmed with emotions',
+    nftLink: 'https://foundation.app/mint/eth/0xc671fFa0F9C8cC0Dd2638798a279b3F076C04306/2',
+  },
+  {
+    id: 5,
+    name: 'Red Thoughts',
+    imageSrc: red,
+    altText: 'Red Thoughts',
+    nftLink: 'https://foundation.app/mint/eth/0x217f9D15f24624BCdB00a657f9F79D1de729D802/4',
+  },
+  {
+    id: 6,
+    name: 'Purple Hearts',
+    imageSrc: purple,
+    altText: 'Purple Hearts',
+    nftLink: 'https://foundation.app/mint/eth/0x217f9D15f24624BCdB00a657f9F79D1de729D802/5',
+  },
+  {
+    id: 7,
+    name: 'Celestial Siren',
+    imageSrc: siren,
+    altText: 'Celestial Siren',
+    nftLink: '',
+  },
+  {
+    id: 8,
+    name: 'stuck in reality',
+    imageSrc: stuck,
+    altText: 'stuck in reality',
+    nftLink: 'https://foundation.app/mint/eth/0xc671fFa0F9C8cC0Dd2638798a279b3F076C04306/3',
+  },
+  {
+    id: 9,
+    name: 'too many heads for too many thoughts',
+    imageSrc: heads,
+    altText: 'too many heads for too many thoughts',
+    nftLink: 'https://foundation.app/mint/eth/0xc671fFa0F9C8cC0Dd2638798a279b3F076C04306/1',
+  },
+  {
+    id: 10,
+    name: 'White Dreams',
+    imageSrc: white,
+    altText: 'White Dreams',
+    nftLink: 'https://foundation.app/mint/eth/0x217f9D15f24624BCdB00a657f9F79D1de729D802/2',
+  },
+  {
+    id: 11,
+    name: 'Yellow Vibes',
+    imageSrc: yellow,
+    altText: 'Yellow Vibes',
+    nftLink: 'https://foundation.app/mint/eth/0x217f9D15f24624BCdB00a657f9F79D1de729D802/1',
+  },
+];
+

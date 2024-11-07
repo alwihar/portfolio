@@ -15,3 +15,11 @@ export const scrollToTop = () => {
     behavior: 'smooth'
   })
 }
+
+export const slugify = (text) => {
+  return text
+      .toString()
+      .toLowerCase()
+      .trim()
+      .replace(/[\s\W-]+/g, '-');
+};

@@ -192,7 +192,6 @@ html, body {
         }
     }
 
-    /* Base styles for each card */
     .card {
         background-size: cover;
         background-position: center;
@@ -240,6 +239,78 @@ html, body {
 
     .animate-floatReverse {
         animation-name: floatReverse;
+    }
+
+    .art__container {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Adjust as needed */
+        overflow: hidden;
+    }
+
+    /* Painting Item Styles */
+    .painting {
+        &__container {
+            position: absolute;
+            top: var(--top);
+            left: var(--left);
+            transform: translate(-50%, -50%) rotate(var(--rotate)) scale(var(--scale));
+            transition: transform 0.5s ease, filter 0.5s ease;
+            animation: float var(--duration) ease-in-out infinite;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            z-index: 1;
+            max-width: 300px; /* Limit maximum width */
+            max-height: 400px; /* Limit maximum height */
+
+            &:hover {
+                transform: translate(-50%, -50%) rotate(0deg) scale(1.1);
+                filter: brightness(110%);
+                z-index: 10;
+            }
+
+            .painting__image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            .painting__placeholder {
+                width: 100%;
+                height: 100%;
+                background-color: #2a2a2a; /* Placeholder color */
+                animation: pulse 1.5s infinite;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    /* Floating Animation */
+    @keyframes float {
+        0%, 100% {
+            transform: translate(-50%, -50%) rotate(var(--rotate)) scale(var(--scale));
+        }
+        50% {
+            transform: translate(-50%, -55%) rotate(calc(var(--rotate) + 5deg)) scale(calc(var(--scale) * 1.05));
+        }
+    }
+
+    /* Placeholder Animation */
+    @keyframes pulse {
+        0% {
+            background-color: #2a2a2a;
+        }
+        50% {
+            background-color: #3a3a3a;
+        }
+        100% {
+            background-color: #2a2a2a;
+        }
     }
 }
 

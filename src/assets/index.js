@@ -24,32 +24,54 @@ import job3 from "./projects/job3.png"
 import star from "./star.png"
 import aaron from "./aaron.jpeg"
 import claudio from "./claudio.jpeg"
+import aqua from "./paintings/aqua.jpeg"
+import black from "./paintings/black.jpeg"
+import red from "./paintings/red.jpeg"
+import purple from "./paintings/purple.jpeg"
+import siren from "./paintings/siren.jpeg"
+import enigma from "./paintings/enigma.jpeg"
+import overwhelmed from "./paintings/overwhelmed.jpeg"
+import stuck from "./paintings/stuck.jpeg"
+import heads from "./paintings/heads.jpeg"
+import white from "./paintings/white.jpeg"
+import yellow from "./paintings/yellow.jpeg"
 
 export {
-  alwi,
-  contact,
-  feedback,
-  x,
-  fb,
-  insta,
-  github,
-  linkedin,
-  star,
-  aaron,
-  claudio,
-  dashboard1,
-  dashboard2,
-  dashboard3,
-  dashboard4,
-  lwa1,
-  lwa2,
-  lwa3,
-  lwa4,
-  portfolio1,
-  portfolio2,
-  portfolio3,
-  portfolio4,
-  job1,
-  job2,
-  job3
+    alwi,
+    contact,
+    feedback,
+    x,
+    fb,
+    insta,
+    github,
+    linkedin,
+    star,
+    aaron,
+    claudio,
+    dashboard1,
+    dashboard2,
+    dashboard3,
+    dashboard4,
+    lwa1,
+    lwa2,
+    lwa3,
+    lwa4,
+    portfolio1,
+    portfolio2,
+    portfolio3,
+    portfolio4,
+    job1,
+    job2,
+    job3,
+    aqua,
+    black,
+    red,
+    purple,
+    siren,
+    enigma,
+    overwhelmed,
+    stuck,
+    heads,
+    white,
+    yellow
 }
